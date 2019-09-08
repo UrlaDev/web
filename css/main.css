@@ -1,20 +1,50 @@
-
-html{
+/* html { 
+  background: url(../img/fondo_1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+/* body{
   height: 100%;
-}
-body{
-  height: 100%;
-}
-.fondo-foto{
- position: relative;
+}  */
+/* .fondo-foto{
+ 
+overflow:hidden;
+ position:fixed;
+ width: 100%;
  background: url('../img/fondo_1.jpg');
  background-size: cover;
  background-repeat: no-repeat;
  background-position: center;
- min-height: 100vh;
-height: auto;
+ min-height: 110vh;
+
+} */
+/* .fondo-foto{
+
+} */
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
 }
-@media(max-width: 1356px){
+
+@media screen and (max-width: 1024px) { 
+  img.bg {
+    left: 50%;
+    margin-left: -512px;  
+  }
+}
+/* @media(max-width: 1356px){
       .fondo-foto{
        height: 100vh; 
       }
@@ -40,27 +70,34 @@ height: auto;
   }
  }
 
- @media(max-height:568px){
-  .fondo-foto{
-    height: 278vh;
-   }
- }
+
  @media(max-height:700px){
   @media(max-width:420px){
  .fondo-foto{
-   height: 100vh;
+   height: 250vh;
   }}
 }
+@media(max-height:568px){
+  .fondo-foto{
+    height: 300vh;
+   }
+ }
+ @media(max-height: 420px){
+  .fondo-foto{
+    height:750vh;
+  }
+} */
 .overlay,
 .overlay-banda{
  position: absolute;
- margin-top:0px;
+ margin-bottom:0px;
  margin-left: 0;
- /* height: 100%;*/
-width: 100%;
+ /* height: 100%; */
+ width: 100%;
+/*
 height: auto;
 top:0;
-bottom:0; 
+bottom:0;  */
  background: rgba(36,155,179, .4);
 }
 nav{
@@ -441,7 +478,33 @@ nav  ul li:nth-child(1) a{
 
     }
   }
-.fondo-foto-bebidas{
+
+/* fondo fixed */
+img.bebidas {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { 
+  img.bebidas {
+    left: 50%;
+    margin-left: -512px;  
+  }
+}
+
+
+  /* Fondo no fixed */
+/* .fondo-foto-bebidas{
   position: relative;
   background: url('../img/bebidasFondo.jpg');
   background-size: cover;
@@ -490,7 +553,7 @@ height: 950vh;
     .fondo-foto-bebidas{
       height: 810vh;
     }
-  }}
+  }} */
 .section .section-card-bebidas{
 height: 100px;
   overflow: hidden;
@@ -560,6 +623,9 @@ height: 100px;
   .section-cards-bebidas .card .card-image .acomoda1{
     top: -136px;
     height: 590px;
+  }
+  .section-cards-bebidas .card .card-image .acomoda4{
+    top: -33px;
   }
 }
 @media(max-width: 745px){
@@ -697,9 +763,9 @@ height: 100px;
  /* footer */
  .overlay .section-footer,
  .overlay-banda .section-footer{
-   position: absolute;
+   /* position: absolute;
    bottom: 0;
-   left: 0;
+   left: 0; */
    width: 100%;
   
  }
@@ -739,9 +805,9 @@ height: 100px;
  .section-hero-banda{
    margin-top: 60px;
  }
- .overlay-banda{
+ /* .overlay-banda{
    height: 100vh;
- }
+ } */
  @media(max-width: 663px){
   .overlay-banda{
     height: 140vh;
@@ -753,7 +819,36 @@ height: 100px;
   }
  }
  /* COmidas */
- .fondo-foto-comidas{
+
+/* foto con position fixed */
+img.comidas {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { 
+  img.comidas {
+    left: 50%;
+    margin-left: -512px;  
+  }
+}
+
+
+
+
+
+ /* fondo sin positio fixed */
+ /* .fondo-foto-comidas{
   position: relative;
   background: url('../img/comidasFondo.jpg');
   background-size: cover;
@@ -776,7 +871,7 @@ height: 100px;
   .fondo-foto-comidas{
     height: 700vh;
   }
-}}
+}} */
  .section-hero-comidas h1{
   font-size: 8rem;
   font-weight: bold;
@@ -854,7 +949,36 @@ z-index: 0.2;
   }
  } */
  /* Llegar */
- .fondo-foto-llegar{
+
+
+/* fixed */
+img.llegar {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { 
+  img.llegar {
+    left: 50%;
+    margin-left: -512px;  
+  }
+}
+
+
+
+
+ /* no fixed */
+ /* .fondo-foto-llegar{
   position: relative;
   background: url('../img/comoLlegar.jpg');
   background-size: cover;
@@ -877,7 +1001,7 @@ z-index: 0.2;
     .fondo-foto-llegar{
       min-height: 180vh;
     }
-  }}
+  }} */
  .section-hero-llegar h1{
   font-size: 8rem;
   font-weight: bold;
@@ -945,7 +1069,32 @@ z-index: 0.2;
  font-size: 4rem;
  text-align: center;
 }
-.fondo-foto-somos{
+/* foto con fixed */
+img.somos {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { 
+  img.somos {
+    left: 50%;
+    margin-left: -512px;  
+  }
+}
+
+
+/* fondo sin fixed */
+/* .fondo-foto-somos{
   position: relative;
   background: url('../img/comoLlegar.jpg');
   background-size: cover;
@@ -962,10 +1111,13 @@ z-index: 0.2;
  @media(max-width: 600px ){
   .fondo-foto-somos{
     min-height: 350vh;
-  
-   
   }
  }
+@media(max-height: 420px){
+  .fondo-foto-somos{
+    height:750vh;
+  }
+} */
  /* dj */
  .fondo-foto-dj{
   position: relative;
